@@ -1814,6 +1814,20 @@
                         } else {
                             updateUploadLog(i, pid);
                         }
+                        
+                        // Добавляем input's
+                        var checkInput = document.getElementsByName("images[]");
+                        if (checkInput && checkInput.length == 0) {
+                            for (var ij = 0; ij < date.images.length; ij++ ) {
+                                var input = document.createElement('input');
+                                input.type = 'hidden';
+                                input.name = 'images[]';
+                                input.value = date.images[ij];
+
+                                var fileInput = document.getElementsByTagName("fieldset");
+                                fileInput[0].appendChild(input);
+                            }
+                        }     
                     } else {
                         self._showUploadError(data.error, params);
                         self._setPreviewError($thumb, i);
@@ -1837,7 +1851,7 @@
                     } else {
                         chkComplete();
                     }
-                    self._initSuccessThumbs();
+                    self._initSuccessThumbs();   
                 }, 100);
             };
             fnError = function (jqXHR, textStatus, errorThrown) {
