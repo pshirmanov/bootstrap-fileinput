@@ -1816,12 +1816,12 @@
                         }
                         
                         // Добавляем input's
-                        var checkInput = document.getElementsByName("images[]");
+                        var checkInput = document.getElementsByName("AdvertImage[images][]");
                         if (checkInput && checkInput.length == 0) {
                             for (var ij = 0; ij < date.images.length; ij++ ) {
                                 var input = document.createElement('input');
                                 input.type = 'hidden';
-                                input.name = 'images[]';
+                                input.name = 'AdvertImage[images][]';
                                 input.value = date.images[ij];
 
                                 var fileInput = document.getElementsByTagName("fieldset");
