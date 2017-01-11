@@ -1816,18 +1816,9 @@
                         }
                         
                         // Добавляем input's
-                        var checkInput = document.getElementsByName("AdvertImage[images][]");
-                        if (checkInput && checkInput.length == 0) {
-                            for (var ij = 0; ij < date.images.length; ij++ ) {
-                                var input = document.createElement('input');
-                                input.type = 'hidden';
-                                input.name = 'AdvertImage[images][]';
-                                input.value = date.images[ij];
-
-                                var fileInput = document.getElementsByTagName("fieldset");
-                                fileInput[0].appendChild(input);
-                            }
-                        }     
+                        for (var ij = 0; ij < data.length; ij++ ) {
+                            $thumb.append('<input type="hidden" name="images[]" value="' + data[ij] + '" />');
+                        }  
                     } else {
                         self._showUploadError(data.error, params);
                         self._setPreviewError($thumb, i);
