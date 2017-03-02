@@ -51,7 +51,7 @@
         msgImageHeightLarge: 'Высота изображения "{name}" не может превышать {size} px.',
         msgImageResizeError: 'Не удалось получить размеры изображения, чтобы изменить размер.',
         msgImageResizeException: 'Ошибка при изменении размера изображения.<pre>{errors}</pre>',
-        dropZoneTitle: 'Перетащите файлы сюда &hellip;',
+        dropZoneTitle: 'Перетащите сюда изображения &hellip;',
         dropZoneClickTitle: '<br>(Или щёлкните, чтобы выбрать {files})',
         fileActionSettings: {
             removeTitle: 'Удалить файл',
