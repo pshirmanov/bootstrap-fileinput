@@ -1817,7 +1817,7 @@
                         
                         // Добавляем input's
                         for (var ij = 0; ij < data.length; ij++ ) {
-                            $thumb.append('<input type="hidden" name="Advert[images][]" value="' + data[ij] + '" />');
+                            $thumb.append('<input type="hidden" name="AdvertForm[images][]" value="' + data[ij] + '" />');
                         }  
                     } else {
                         self._showUploadError(data.error, params);
