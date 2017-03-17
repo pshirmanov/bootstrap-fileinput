@@ -1,5 +1,5 @@
 /*!
- * bootstrap-fileinput v4.3.6
+ * bootstrap-fileinput v4.3.12
  * http://plugins.krajee.com/file-input
  *
  * Author: Kartik Visweswaran
